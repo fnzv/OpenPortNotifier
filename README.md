@@ -33,3 +33,10 @@ Downloads the binaries and install them into your system, after you changed the 
 To compile and install binaries run: 
 
 ```bash compile.sh```
+
+### How OPN works
+- Reads from /etc/opn/opn.conf configuration, if these values (SMTPhost,MysqlAuth,Telegram) are "" will be skipped and the feature is omitted
+- Scans the Networks using Masscan (because nmap is slow)
+- Send output to screen and trigger alerts if ports open are on "CriticalPorts" list
+- All the scans are saved into the configured database 
+
