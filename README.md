@@ -1,6 +1,8 @@
 # OpenPortNotifier
 Simple tool to monitor network changes over time and trigger alerts
 
+## Demo
+[![asciicast](https://asciinema.org/a/cUL1ksv8JaNrZvM2PgNUjyuyj.png)](https://asciinema.org/a/cUL1ksv8JaNrZvM2PgNUjyuyj)
 
 ## Requirements
 
