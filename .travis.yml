@@ -13,4 +13,4 @@ install: true
 go_import_path: github.com/fnzv/OpenPortNotifier
 
 script:
-- bash compile.sh
+- sudo bash ci-test.sh
