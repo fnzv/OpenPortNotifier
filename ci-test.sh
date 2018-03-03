@@ -5,4 +5,4 @@
  sudo cp binaries/opn /bin
  sudo mkdir /etc/opn
  sudo cp conf/opn.conf.example /etc/opn/opn.conf
- sudo apt-get install -y postfix mysql-server masscan
+
