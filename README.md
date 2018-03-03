@@ -20,7 +20,7 @@ Run the bash script (install.sh) to install all the required dependencies.
 
 Downloads the binaries and install them into your system, after you changed the example configuration (/etc/opn/opn.conf) you can run the scans with the command:
 
-```root:# opn```
+```opn```
 
 ### Use cases
 - Continuos scanning of your Networks and monitor service exposure (All scans are saved into Mysql and/or sent via email/tg)
