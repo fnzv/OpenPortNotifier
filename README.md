@@ -1,4 +1,5 @@
 # OpenPortNotifier
+[![Build Status](https://travis-ci.org/fnzv/OpenPortNotifier.svg?branch=master)](https://travis-ci.org/fnzv/OpenPortNotifier) <br>
 Simple tool to monitor network changes over time and trigger alerts
 
 ## Demo
