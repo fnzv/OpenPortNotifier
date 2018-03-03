@@ -16,6 +16,7 @@ Simple tool to monitor network changes over time and trigger alerts
 ### Quickstart
 
 Run the bash script (install.sh) to install all the required dependencies.
+WARNING: this script will install automatically postfix,mysql-server and masscan
 
 ```bash install.sh```
 
@@ -31,6 +32,7 @@ Downloads the binaries and install them into your system, after you changed the 
 ### Compile
 
 To compile and install binaries run: 
+WARNING: this script will install automatically postfix,mysql-server and masscan
 
 ```bash compile.sh```
 
