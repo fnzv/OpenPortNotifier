@@ -8,9 +8,7 @@ git:
 
 before_install:
   - sudo apt-get -qq update
-  - go get github.com/BurntSushi/toml
-  - go get github.com/Go-SQL-Driver/MySQL
-  - go get gopkg.in/telegram-bot-api.v4
+
 
 install: true
 
