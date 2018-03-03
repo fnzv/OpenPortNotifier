@@ -41,5 +41,5 @@ WARNING: this script will install automatically postfix,mysql-server and masscan
 - Scans the Networks using Masscan (because nmap is slow)
 - Send output to screen and trigger alerts if ports open are on "CriticalPorts" list
 - All the scans are saved into the configured database 
-- For large scans set a bigger ulimit (open files limit) or the script will fail
+- For large scans set a bigger ulimit (open files limit) and max_connections on mysql or the script will fail
 
