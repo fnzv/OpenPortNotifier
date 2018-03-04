@@ -28,6 +28,11 @@ Downloads the binaries and install them into your system, after you changed the 
 - Continuos scanning of your Networks and monitor service exposure (All scans are saved into Mysql and/or sent via email/tg).. "pro-tip" -> run on crontab -> http://crontab.guru/
 - Constant Alerting of critical service or when a firewall (could be software or hardware) stops working
 - Tracking service/hosts from your VPN/Allowed cidr to know where your services are without running everytime the slow Nmap 
+
+### Integrating OPN with Metabase:
+- Install Metabase and connect the OPN database, then you can easily create dashboards to dinamically track hosts on your networks.
+- The example below is made in 10 minutes (https://www.metabase.com/ - docker run -d -p 3000:3000 --name metabase metabase/metabase) and connected the db to Metabase + running OPN on crontab so every XYZ hour/minutes i can just check the dashboard and see the email report/telegram notifications.
+
 ![](OPN-Metabase.png?raw=true)
 
 ### Compile
