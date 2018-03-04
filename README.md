@@ -49,3 +49,9 @@ WARNING: this script will install automatically postfix,mysql-server and masscan
 - All the scans are saved into the configured database 
 - For large scans set a bigger ulimit (open files limit) and max_connections on mysql or the script will fail
 
+### Notes/Pro tips
+- Large scale scans require high ulimit setting ( http://posidev.com/blog/2009/06/04/set-ulimit-parameters-on-ubuntu/ )
+- Set high ammount of max connections on MySQL to sustain large scans (max_connections = 10000 on my.cnf or SET GLOBAL)
+- Once OPN is installed you can just insert the following cron ```00 0  * * * root opn``` to run the scan every day at 00:00
+- Installing an OpenVPN/IPSec client and let the traffic route to your VPN/Allowed Network so you can scan your entire nets and avoid FWs
+
