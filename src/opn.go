@@ -92,6 +92,9 @@ func main() {
 
         var config = ReadConfig()
 
+        // reset whitelist first time
+        cmd := "> /tmp/whitelist"
+        exec_shell(cmd)
         f, err := os.OpenFile("/var/log/opn.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
         if err != nil {
                 log.Fatal(err)
