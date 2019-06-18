@@ -116,11 +116,13 @@ func main() {
         complete_text := "\r\nMessage Body:\n"
 
         i2 := 0
-        for range whitelist {
-                host := whitelist[i2]
-                cmd := "echo '" + host + "' >> /tmp/whitelist"
-                exec_shell(cmd)
-        }
+       for range whitelist {
+               host := whitelist[i2]
+               log.Println("Adding "+host+" on whitelist")
+               cmd := "echo '" + host + "' >> /tmp/whitelist"
+               exec_shell(cmd)
+               i2++
+       }
 
         i := 0
         for range networks {
