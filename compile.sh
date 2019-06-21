@@ -17,9 +17,14 @@
  go build -o binaries/opn src/opn.go
  cp binaries/opn /bin
  mkdir /etc/opn
+ sudo apt-get install -y masscan
  cp conf/opn.conf.example /etc/opn/opn.conf
- apt-get install -y postfix mysql-server masscan
- echo "Creating Database opn.."
- mysql -p -e "create database opn"
- echo "Creating Table for opn.."
- mysql opn -p -e "create table opnscans ( IP varchar(20),PORT varchar(20), createdDate datetime);"
+ echo "Do you wish to install mysql-server and postfix on this server?"
+ select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) sudo apt-get install -y postfix mysql-server; echo "Creating Database opn..";  mysql -p -e "create database opn";  echo "Creating Table for opn.."; mysql opn  -e "create table opnscans (id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, IP varchar(20),PORT varchar(20), createdDate datetime);";
+ break;;
+        No ) exit;;
+    esac
+done
+ 
