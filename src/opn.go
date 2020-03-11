@@ -167,7 +167,7 @@ func main() {
                 }
 
                 if mailhost != "" && complete_text != "\r\nMessage Body:\n" {
-                        text := "Subject: Open Port Notifier - Report" + "\r\n " + complete_text
+                        text := "Subject:  Open Port Notifier - Report" + "\r\n " + complete_text
                         log.Println("Sending email report")
                         SendMail(mailsrc, maildst, mailhost, text)
                 }
